@@ -1,0 +1,251 @@
+:root {
+    --primery-color: #f3a952;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body {
+    height: 100vh;
+} */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+}
+.video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 05s;
+
+}
+.lofi_bg_01 {
+    opacity: 1;
+    z-index: -100;
+}
+.lofi_bg_02 {
+    opacity: 0;
+    z-index: -99;
+}
+.lofi_bg_03{
+    opacity: 0;
+    z-index: -98;
+}
+
+.lofi_bg_04{
+    opacity: 0;
+    z-index: -97;
+
+}
+.show{
+    opacity: 1 !important;
+    
+}
+
+.not_show {
+    opacity: 0 !important;
+}
+
+/* heading */
+.lofi_nav {   
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    font-size: 30px;
+    padding: 15px;
+    overflow: hidden;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(255,255,255,0.0));
+}
+.lofi_nav img {
+    transform: scale(2.0);
+    margin-left: 50px;
+    max-width: 150px;
+    max-height: 150px;
+}
+.lofi_nav a>i,.lofi_rain {
+    font-size: 50px;
+    margin-left: 100px;
+    color: #fff;
+    cursor: pointer;    
+    transition: 0.3s;
+}
+.lofi_nav a:hover i,.lofi_rain:hover i{
+    transform: scale(1.2);
+    color: var(--primery-color);
+}
+
+.day_night {
+    width: 80px;
+    height: 35px;
+    background: rgba(78, 76, 76, 0.5);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 450px;
+    cursor: pointer;
+}
+.day_night i {
+    font-size: 35px;
+    color: var(--primery-color);
+}
+
+.knot{
+    position: absolute;
+    padding: 18px;
+    background-color: rgb(15, 12, 12);
+    border-radius: 50%;
+    transform: scale(1.1);
+    margin-left: 43px;
+    transition: 0.3s;
+}
+
+.lofi_rain p{
+    font-size: 15px;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.lofi_rain:hover p {
+    opacity: 1;
+}
+.move {
+    margin-left: 0px;
+}
+
+.hide {
+    display: none;
+}
+/* lofi_control */
+
+.lofi_control {
+    width: 90px;
+    height: 170px;
+    padding: 15px;
+    font-size: 60px;
+    border-radius: 40px;
+    position: absolute;
+    right: 10px;
+    /* overflow: hidden; */
+    object-fit: cover;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.7);
+
+}
+.lofi_control i  {
+    height: 50%;
+    display: block;
+    color: #4e5054; 
+    cursor: pointer;
+
+}
+.lofi_control i:active {
+    color: var(--primery-color);
+}
+
+.control_click {
+    border-radius: 0px 40px 40px 40px;
+}
+
+.control {
+    width: 380px;
+    height: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px 25px;
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    left: -380px;
+    top: -60px;
+    border-radius: 15px;
+    /* opacity: 0; */
+    transition: 0.3s;
+}
+/* control volum*/
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.volum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: var(--primery-color);
+}
+input {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    background: #3e3e3e;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primery-color);
+    cursor: pointer;
+}
+.noise_volum,.noises {
+    width: 50%;
+}
+/* control background video */
+.control_background {
+    justify-content: center;
+    text-align: center;
+    height: unset;
+}
+.img_bg img {
+    max-width: 200px;
+    padding: 20px;
+    cursor: pointer;
+}
+.img_bg img:hover {
+    transform: scale(1.2);
+}
+.img_bg {
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+}
+/* lofi play */
+.lofi_play {
+    position: absolute;
+    bottom: 0;
+    font-size: 80px;
+    color: rgb(172, 160, 160);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lofi_play i:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(0.8);
+    color: var(--primery-color);
+}
+
+
+
+
+
+

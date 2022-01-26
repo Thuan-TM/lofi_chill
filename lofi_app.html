@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Chill</title>
+    <link rel = "icon" href ="./img/logo.png" type = "image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- bg video -->
+    <div class="lofi_bg_01 video show">
+        <video class="video_in one"  src="./video/1/Day-sunny.mp4" type="video/mp4"  autoplay="true" loop="loop" muted volume="0">
+    </div>
+    <div class="lofi_bg_02 video" >
+        <video class="video_in"  src="./video/1/Day-rainny.mp4" type="video/mp4"  autoplay="true" loop="loop" muted volume="0">
+    </div>
+    <div class="lofi_bg_03 video" >
+        <video class="video_in"  src="./video/1/Night-clear.mp4" type="video/mp4"  autoplay="true" loop="loop" muted volume="0">
+    </div>
+    <div class="lofi_bg_04 video" >
+        <video class="video_in"  src="./video/1/Night-rainny.mp4" type="video/mp4"  autoplay="true" loop="loop" muted volume="0">
+    </div>
+    
+    <!-- heading -->
+    <div class="lofi_nav">
+        <img src="./img/logo.0cbf9e63.gif" alt="" >  
+        <a href="https://www.facebook.com/vanthuan0107">
+            <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://github.com/Thuan-TM">
+            <i class='bx bxl-github'></i>
+        </a>
+        <div class="day_night">
+            <div class="knot"></div>
+            <i class='bx bxs-sun sun' ></i>
+            <i class='bx bxs-moon moon'></i>
+            
+        </div>
+        <div class="lofi_rain">
+            <i class='bx bx-cloud-light-rain'></i>
+            <p>City Rain</p>
+        </div>
+    </div>
+
+    <!-- control -->
+    <div class="lofi_control">
+        <i class='bx bx-slider'></i>
+        <div class="control_volum control hide">
+            <h2>volume</h2>
+            <div class="volum">
+                <span class='bx bxs-volume'></span>    
+                <input type="range" class="progress volum_chil" value="50" step="1" min="0" max="100">
+                <span class='bx bxs-volume-full' ></span>
+            </div>
+            <!--  -->
+            <h2>Background Noise</h2>
+            <div class="volum">
+                <span class="noises" >City rain</span>
+                <input type="range" class="progress noise_volum" value="0" step="1" min="0" max="100">
+            </div>
+            <div class="volum">
+                <span class="noises" >Fireplace</span>
+                <input type="range" class="progress noise_volum" value="0" step="1" min="0" max="100">
+            </div>
+            <div class="volum">
+                <span class="noises" >Snow</span>
+                <input type="range" class="progress noise_volum" value="0" step="1" min="0" max="100">
+        </div>
+
+        </div> 
+        <i class='bx bxs-book-reader'></i>
+        <div class="control_background control hide">
+            <h2>Background Video</h3>
+            <div class="img_bg">
+                <img class="img_1" src="./video/1/gif/Day-sunny.gif" alt="">
+                <img class="img_2" src="./video/2/gif/LVR-Day-112521.gif" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- playing -->
+    <div class="lofi_play">
+        <i class='bx bx-skip-previous previous' ></i>
+        <i class='bx bx-play-circle play'></i>
+        <!-- <i class='bx bx-pause-circle play' ></i> -->
+        <i class='bx bx-skip-next next' ></i>
+        <audio class = "song_chill" src="./amtham/chill/chill1.mp3" type="audio/mpeg"  preload='auto' loop ></audio>
+        <audio class = "noises_song onee" src="./amtham/rain_city.mp3" id type="audio/mpeg"  loop="loop" autoplay=  "true"  ></audio>
+        <audio class = "noises_song twoo" src="./amtham/fireplace.mp3" id type="audio/mpeg"  loop="loop" autoplay=  "true" ></audio>
+        <audio class = "noises_song threee" src="./amtham/snow.mp3" id type="audio/mpeg"  loop="loop" autoplay=  "true" ></audio>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
