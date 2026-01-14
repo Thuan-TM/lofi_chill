@@ -1,5 +1,3 @@
-
-
 // bg
 const list_video = document.querySelectorAll('.video')
 const list = document.getElementsByClassName('video_in')
@@ -30,6 +28,8 @@ const volum_chil = document.querySelector('.volum_chil') // thanh volum chill so
 const one = document.querySelector('.onee')
 const two = document.querySelector('.twoo')
 const three = document.querySelector('.threee')
+const four = document.querySelector('.foure')
+const five = document.querySelector('.fivee')
 const list_noise_volum = document.querySelectorAll('.noise_volum') // thanh volum bg_nosi
 
 
@@ -116,32 +116,40 @@ const lofi_chill = {
     
     // lam am thanh tang giam bg_noise
     noise_song: function(){
-        one.volume = 0
-        two.volume = 0
-        three.volume = 0
+        one.volume = 0;
+        two.volume = 0;
+        three.volume = 0;
+        four.volume = 0;
+        five.volume = 0;
         
         list_noise_volum[0].onchange = function (){
             if(list_noise_volum[0].value > 1){
-                check_rain = true
-                lofi_chill.day()
+                check_rain = true;
+                lofi_chill.day();
             }
             else {
-                check_rain = false
-                lofi_chill.day()
+                check_rain = false;
+                lofi_chill.day();
             }
             one.volume =  list_noise_volum[0].value/100; 
-            one.play()
+            one.play();
         }
         list_noise_volum[1].onchange = function (){
             two.volume =  list_noise_volum[1].value/100; 
-            two.play()
+            two.play();
         }
         list_noise_volum[2].onchange = function (){
             three.volume =  list_noise_volum[2].value/100; 
-            three.play()
+            three.play();
         }
-
-        
+        list_noise_volum[3].onchange = function (){
+            four.volume =  list_noise_volum[3].value/100; 
+            four.play();
+        }
+        list_noise_volum[4].onchange = function (){
+            five.volume =  list_noise_volum[4].value/100; 
+            five.play();
+        }
     },
  
     song_chillll: function(){
